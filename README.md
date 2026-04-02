@@ -7,7 +7,6 @@ Sistema completo de agendamento para barbearia, desenvolvido como projeto fullst
 ## 📸 Preview
 
 <img src="./frontend/img/backendreadme.png" alt="preview-back">
-<img src="./frontend/img/preview.png" alt="preview">
 
 ---
 
