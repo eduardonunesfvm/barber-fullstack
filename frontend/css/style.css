@@ -1,0 +1,91 @@
+/* animações */
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+body {
+  animation: fade 0.4s ease;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* imagens */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* header */
+header {
+  background: #BBBBBB;
+  padding: 20px 0;
+}
+
+/* container */
+.caixa {
+  max-width: 940px;
+  width: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* logo */
+header img {
+  width: 250px;
+}
+
+/* menu (SEM position absolute agora) */
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* apresentação */
+.apresentacao {
+  max-width: 940px;
+  margin: 60px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.apresentacao h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.apresentacao p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}

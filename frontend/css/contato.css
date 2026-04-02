@@ -1,0 +1,107 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    animation: fade 0.4s ease;
+}
+
+/* ANIMAÇÃO */
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* HEADER */
+header {
+    background: #bbb;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO */
+.logo {
+    width: 140px;
+}
+
+/* BOTÃO */
+.botao {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.botao:hover {
+    color: white;
+}
+
+/* NAV */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* MAIN */
+.contato {
+    max-width: 500px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.contato h1 {
+    margin-bottom: 30px;
+}
+
+/* FORM */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* BOTÃO */
+.formulario button {
+    padding: 12px;
+    border: none;
+    background: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.formulario button:hover {
+    transform: scale(1.05);
+}

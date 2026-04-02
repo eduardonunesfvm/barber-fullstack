@@ -1,0 +1,123 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    animation: fade 0.4s ease;
+}
+
+/* ANIMAÇÃO */
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* IMAGENS */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* HEADER */
+header {
+    background: #bbb;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* BOTÃO VOLTAR */
+.botao {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.botao:hover {
+    color: white;
+}
+
+/* LOGO */
+.logo {
+    width: 250px;
+}
+
+/* NAV */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* PRODUTOS */
+.produtos {
+    max-width: 940px;
+    margin: 60px auto;
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* CARD */
+.card {
+    width: 260px;
+    padding: 25px;
+    border: 2px solid black;
+    border-radius: 20px;
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    border-color: lightblue;
+}
+
+/* CARD IMG */
+.card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin: 15px 0;
+}
+
+/* TEXTOS */
+.card h2 {
+    font-size: 22px;
+}
+
+.card p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.card span {
+    font-weight: bold;
+    font-size: 18px;
+}
