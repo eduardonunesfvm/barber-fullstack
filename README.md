@@ -6,8 +6,8 @@ Sistema completo de agendamento para barbearia, desenvolvido como projeto fullst
 
 ## 📸 Preview
 
-<img src="../BARBER-PROJECT/front end/img/backendreadme.png" alt="preview-back">
-<img src="../BARBER-PROJECT/front end/img/preview.png" alt="preview">
+<img src="./frontend/img/backendreadme.png" alt="preview-back">
+<img src="./frontend/img/preview.png" alt="preview">
 
 ---
 
@@ -243,6 +243,6 @@ ALLOWED_HOSTS=localhost,127.0.0.1
 
 ## 👨‍💻 Autor
 
-Desenvolvido por **Eduardo Nunes** como projeto fullstack de aprendizado.
+Desenvolvido por **Eduardo Nunes & Isabela Guimarães** como projeto fullstack de aprendizado.
 
 🔗 [GitHub](https://github.com/eduardonunesfvm)
