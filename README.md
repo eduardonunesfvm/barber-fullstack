@@ -7,7 +7,6 @@ Sistema completo de agendamento para barbearia, desenvolvido como projeto fullst
 ## 📸 Preview
 
 <img src="./frontend/img/backendreadme.png" alt="preview-back">
-<img src="./frontend/img/preview.png" alt="preview">
 
 ---
 
@@ -168,8 +167,8 @@ Visualiza ou cancela nos "Meus Agendamentos"
 
 ```bash
 # Clone o repositório
-git clone https://github.com/eduardonunesfvm/Page-Barbearia.git
-cd Page-Barbearia
+git clone https://github.com/eduardonunesfvm/barber-fullstack.git
+cd barber-fullstack
 
 # Abra o index.html diretamente no navegador
 # ou use uma extensão como Live Server no VS Code
@@ -179,8 +178,8 @@ cd Page-Barbearia
 
 ```bash
 # Clone o repositório (quando disponível)
-git clone https://github.com/eduardonunesfvm/barbearia-api.git
-cd barbearia-api
+git clone https://github.com/eduardonunesfvm/barber-fullstack.git
+cd barber-fullstack
 
 # Crie e ative o ambiente virtual
 python -m venv .venv
@@ -219,7 +218,7 @@ ALLOWED_HOSTS=localhost,127.0.0.1
 
 | Etapa | Status |
 |---|---|
-| Páginas HTML/CSS | 🔄 Em desenvolvimentoo |
+| Páginas HTML/CSS | 🔄 Em desenvolvimento |
 | Interatividade com JavaScript | 🔄 Em desenvolvimento |
 | Configuração do Django + DRF | 🔄 Em desenvolvimento |
 | Autenticação JWT (dj-rest-auth) | 🔄 Em desenvolvimento |
