@@ -26,7 +26,10 @@ urlpatterns = [
 
     # Suas APIs
     path('api/appointments/', include('appointments.api.urls')),
-    #path('api/services/', include('services.api.urls')),
+    path('api/auth/', include('userauth.urls')),
+    
+
+
 ]
 
 

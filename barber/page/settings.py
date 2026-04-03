@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     'dj_rest_auth',
     'dj_rest_auth.registration',
     'rest_framework.authtoken',
+    'userauth',
+    
 ]
 
 SITE_ID = 1
@@ -64,12 +66,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'page.urls'
 
-REST_FRAMEWORK = {
-    "DEFAULT_PERMISSION_CLASSES": (
-        "rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly",
-    ),
-}
-
+ 
 
 TEMPLATES = [
     {
@@ -140,3 +137,19 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+REST_AUTH = {
+    'USE_JWT': True,
+    'JWT_AUTH_COOKIE': 'barberjwtauth_cookie',
+    'JWT_AUTH_REFRESH_COOKIE': 'barberjwtauth_refresh_cookie',
+
+}
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'dj_rest_auth.jwt_auth.JWTCookieAuthentication',
+    ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ],
+}
