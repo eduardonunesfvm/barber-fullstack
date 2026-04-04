@@ -221,7 +221,7 @@ ALLOWED_HOSTS=localhost,127.0.0.1
 | Páginas HTML/CSS | 🔄 Em desenvolvimento |
 | Interatividade com JavaScript | 🔄 Em desenvolvimento |
 | Configuração do Django + DRF | 🔄 Em desenvolvimento |
-| Autenticação JWT (dj-rest-auth) | 🔄 Em desenvolvimento |
+| Autenticação JWT (dj-rest-auth) | ✅ Concluído! |
 | CRUD de Serviços | ⏳ Pendente |
 | Sistema de Agendamentos | ⏳ Pendente |
 | Regras de permissão | ⏳ Pendente |
