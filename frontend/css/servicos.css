@@ -22,10 +22,8 @@ img {
     height: auto;
 }
 
-/* HEADER */
-header {
-    background: #bbb;
-    padding: 20px 0;
+.servicos-header {
+    margin-top: 40px;
 }
 
 .container {
@@ -68,9 +66,7 @@ nav a {
     font-size: 16px;
 }
 
-nav a:hover {
-    color: white;
-}
+
 
 /* PRODUTOS */
 .produtos {
@@ -96,7 +92,6 @@ nav a:hover {
 
 .card:hover {
     transform: scale(1.05);
-    border-color: lightblue;
 }
 
 /* CARD IMG */

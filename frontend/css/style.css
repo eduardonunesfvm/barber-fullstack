@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* animações */
 button {
   transition: all 0.3s ease;
@@ -9,6 +13,16 @@ button:hover {
 
 body {
   animation: fade 0.4s ease;
+  background: linear-gradient(to bottom, #1a1a1a, #2b2b2b);
+  color: #fff;
+}
+
+h1, h2, h3 {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+p, a, li {
+  font-family: 'Montserrat', sans-serif;
 }
 
 @keyframes fade {
@@ -31,7 +45,7 @@ img {
 
 /* header */
 header {
-  background: #BBBBBB;
+  background: #ffffff;
   padding: 20px 0;
 }
 
@@ -67,8 +81,9 @@ nav a {
 }
 
 nav a:hover {
-  color: white;
+  font-size: 17px;
   text-decoration: underline;
+  transition: 0.3s;
 }
 
 /* apresentação */
@@ -88,4 +103,73 @@ nav a:hover {
   font-size: 20px;
   line-height: 1.6;
   margin-bottom: 15px;
+}
+
+.imagens-apresentacao {
+   max-width: 940px;
+   margin: 60px auto;
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+   flex-wrap: wrap;
+}
+
+.imagens-container {
+    flex: 1 1 300px;
+    max-width: 400px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.imagens-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+.imagens-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.servicos-footer {
+    background: #BBBBBB;
+    
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer {
+  background: #111;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.footer h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+/* BOTÃO BRABO */
+.btn-agendar {
+  display: inline-block;
+  background: #d4af37; /* dourado chique */
+  color: #000;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+
+  transition: 0.3s;
+}
+
+.btn-agendar:hover {
+  background: #b8962e;
+  transform: scale(1.1);
 }

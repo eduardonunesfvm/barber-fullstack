@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login — BarberStack</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <header>
+    <div class="caixa">
+      <span class="logo-text">BarberStack</span>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../servicos.html">Serviços</a></li>
+    </div>
+  </header>
+
+  <main>
+    <div class="auth-card">
+      <h1>Entrar</h1>
+      <p class="subtitulo">Acesse sua conta para agendar</p>
+
+      <div class="mensagem-erro" id="erro">Usuário ou senha incorretos.</div>
+
+      <div class="form-group">
+        <label for="username">Usuário</label>
+        <input type="text" id="username" placeholder="seu usuário" autocomplete="username">
+      </div>
+
+      <div class="form-group">
+        <label for="password">Senha</label>
+        <input type="password" id="password" placeholder="••••••••" autocomplete="current-password">
+      </div>
+
+      <button class="btn-submit" onclick="login()">Entrar</button>
+
+      <p class="auth-link">Não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 BarberStack. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="../js/login.js"></script>
+  
+</body>
+</html>

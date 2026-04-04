@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro — BarberStack</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+
+  <header>
+    <div class="caixa">
+      <span class="logo-text">BarberStack</span>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../servicos.html">Serviços</a></li>
+    </div>
+  </header>
+
+  <main>
+    <div class="auth-card">
+      <h1>Cadastro</h1>
+      <p class="subtitulo">Crie sua conta e agende agora</p>
+
+      <div class="mensagem erro" id="mensagem"></div>
+
+      <div class="form-group">
+        <label for="username">Usuário</label>
+        <input type="text" id="username" placeholder="escolha um usuário">
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" placeholder="seu@email.com">
+      </div>
+
+      <div class="form-group">
+        <label for="password1">Senha</label>
+        <input type="password" id="password1" placeholder="••••••••">
+      </div>
+
+      <div class="form-group">
+        <label for="password2">Confirmar Senha</label>
+        <input type="password" id="password2" placeholder="••••••••">
+      </div>
+
+      <button class="btn-submit" onclick="cadastrar()">Criar Conta</button>
+
+      <p class="auth-link">Já tem conta? <a href="login.html">Entrar</a></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 BarberStack. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="../js/cadastro.js"></script>
+
+</body>
+</html>

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato & Agendamento</title>
-    <link rel="stylesheet" href="../css/contato.css">
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="../css/agendamento.css">
 </head>
 
 <body>
@@ -27,32 +27,28 @@
 
 <main class="contato">
 
-    <h1>Contato & Agendamento</h1>
+    <h1>Agendamento</h1>
 
-    <form class="formulario">
+    <div id="mensagem-erro" style="display:none; color: red; margin-bottom: 16px;"></div>
+    <div id="mensagem-sucesso" style="display:none; color: green; margin-bottom: 16px;"></div>
 
-        <input type="text" placeholder="Seu nome" required>
+    <form class="formulario" onsubmit="return false;">
 
-        <input type="tel" placeholder="Telefone" required>
-
-        <select required>
+        <!-- serviços carregados dinamicamente pela API -->
+        <select id="servico-select" required>
             <option value="">Escolha o serviço</option>
-            <option>Corte de Cabelo</option>
-            <option>Barba</option>
-            <option>Cabelo + Barba</option>
         </select>
 
-        <input type="date" required>
+        <input id="data-agendamento" type="date" required>
 
-        <input type="time" required>
+        <input id="hora-agendamento" type="time" required>
 
-        <textarea placeholder="Observações (opcional)"></textarea>
-
-        <button type="submit">Agendar</button>
+        <button type="button" onclick="criarAgendamento()">Agendar</button>
 
     </form>
 
 </main>
+
 
 </body>
 </html>
