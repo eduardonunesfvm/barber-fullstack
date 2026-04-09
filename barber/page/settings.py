@@ -71,7 +71,7 @@ ROOT_URLCONF = 'page.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [BASE_DIR / '..' / 'frontend' / 'html'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -138,6 +138,12 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+# Adicione esta linha para o Django saber onde estão seus arquivos de CSS/JS/Imagens
+STATICFILES_DIRS = [
+    BASE_DIR / ".." / "frontend" / "css",
+    BASE_DIR / ".." / "frontend" / "js",
+    BASE_DIR / ".." / "frontend" / "assets", # onde costumam ficar as imagens
+] 
 REST_AUTH = {
     'USE_JWT': True,
     'JWT_AUTH_COOKIE': 'barberjwtauth_cookie',

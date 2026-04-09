@@ -16,21 +16,24 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from django.views.generic import TemplateView
 
 urlpatterns = [
+    # 1. Página Inicial (Front-end)
+    path('', TemplateView.as_view(template_name='index.html'), name='home'),
+
+    # 2. Painel Administrativo
     path('admin/', admin.site.urls),
 
-    # Auth (dj-rest-auth)
+    # 3. Autenticação
     path('auth/', include('dj_rest_auth.urls')),
     path('auth/registration/', include('dj_rest_auth.registration.urls')),
 
-    # Suas APIs
+    # 4. Suas APIs (Back-end)
     path('api/appointments/', include('appointments.api.urls')),
     path('api/auth/', include('userauth.urls')),
     path('api/services/', include('services.api.urls')),
 ]
-
-
 
 
 
