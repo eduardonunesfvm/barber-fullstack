@@ -138,7 +138,6 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-# Adicione esta linha para o Django saber onde estão seus arquivos de CSS/JS/Imagens
 STATICFILES_DIRS = [
     BASE_DIR / ".." / "frontend" / "css",
     BASE_DIR / ".." / "frontend" / "js",
